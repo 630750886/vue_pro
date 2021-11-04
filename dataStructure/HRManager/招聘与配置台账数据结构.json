@@ -1,0 +1,16 @@
+{
+  "keyid":"",
+  //申请时间
+  "applyTime":"",
+  //申请组织
+  "applyOrg":"",
+  //申请人
+  "applyPerson":"",
+  "applyTypeid":"",
+  //办理事项
+  "applyType":"",
+  //审核完成时间
+  "examineTime":"",
+  "statusid":"",
+  "statusname":""
+}

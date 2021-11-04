@@ -1,0 +1,11 @@
+business子路由
+添加
+
+      {
+        path: "trading_platform",
+        name: "trading_platform",
+        component:() => import('../pages/businessManager/biddingAgency/tradingPlatform/index.vue'),
+        meta: {
+          title: "项目原件管理"
+        }
+      },

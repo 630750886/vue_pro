@@ -1,0 +1,110 @@
+{
+  "basicInfo":{
+    "keyid": "人员id",
+    "personName": "姓名",
+    "gender": "性别",
+    "age": "年龄",
+    "birthday": "出生年月",
+    "idCard": "身份证号",
+    //身份证有效期 2015/06/21-2025/06/21
+    "idCardExpiryDate": "",
+    "idCardFile":"",//新增 身份证件：url
+    "idCardAddress": "身份证上住址",
+    "familyAddress": "家庭住址",
+    "phone": "手机号",
+    "emergencyPerson": "紧急联系人",
+    "emergencyPhone": "紧急联系人电话",
+    "personType": "人员分类名称",
+    "entryTime":"入职时间",// 新增
+    "bodyInspectFile":"体检证明",// 新增
+    "criminalRecordFile":"无行为犯罪记录",// 新增
+    "bankCreditFile":"银行个人征信",// 新增
+    //劳动合同有效期 格式：2015/06/21-2025/06/21
+    "laborContractExpiryDate": "",
+    //劳动合同扫描件
+    "laborContractFile": "",
+    //劳务合同有效期 格式：2015/06/21-2025/06/21
+    "labourServiceContractDate":"",
+    //劳务合同扫描件
+    "labourServiceContractFile": "",
+    "secrecyTreatySignTime": "保密协议签订时间",
+    //保密协议扫描件保密协议扫描件
+    "secrecyTreatyFile": "",
+    "postDutyBookSignTime": "岗位职责确认书签订时间",
+    //岗位职责确认扫描件
+    "postDutyBookFile": "",
+    "prohibitionTreatySignTime": "禁业协议签订时间",
+    //禁业协议扫描件
+    "prohibitionTreatyFile": ""
+  },
+  "education": [//学历
+    {
+      "keyid": "学历id",
+      "personId": "",
+      "name": "学历名称",
+      "type": "类型",
+      "school": "毕业院校",
+      "graduateTime": "毕业时间",
+      "major": "所学专业",
+      "file": "毕业证附件"
+    }
+  ],
+  "honor": [//荣誉
+    {
+      "keyid": "荣誉id",
+      "personId": "",
+      "honorName": "荣誉名称",
+      "obtainTime": "获取时间",
+      "file": "附件"
+    }
+  ],
+  "insurance": [
+    {
+      "keyid": "id",
+      "insuranceName": "保险名称",
+      "company": "保险公司",
+      "insuredName": "被保险人",
+      "beneficiary": "受益人",
+      "buyTime": "购买时间",
+      "file": "附件"
+    }
+  ],
+  "practice": [
+    {
+      "keyid": "执业id",
+      "practiceType": "执业类型",
+      "majorA": "专业一",
+      "majorB": "专业二",
+      "obtainTime": "初次获取时间",
+      "startTime": "有效期开始时间",
+      "endTime": "有效期结束时间",
+      "file": "附件"
+    }
+  ],
+  "socialFund": {
+    "year": "缴纳年",
+    "month1": "已缴纳",//1月是否缴纳：已缴纳或者未缴纳
+    "month2": "未缴纳",//2月是否缴纳：已缴纳或者未缴纳
+    "month3": "已缴纳",//3月是否缴纳：已缴纳或者未缴纳
+    "month4": "已缴纳",//4月是否缴纳：已缴纳或者未缴纳
+    "month5": "已缴纳",//5月是否缴纳：已缴纳或者未缴纳
+    "month6": "已缴纳",//6月是否缴纳：已缴纳或者未缴纳
+    "month7": "已缴纳",//7月是否缴纳：已缴纳或者未缴纳
+    "month8": "未缴纳",//8月是否缴纳：已缴纳或者未缴纳
+    "month9": "未缴纳",//9月是否缴纳：已缴纳或者未缴纳
+    "month10": "未缴纳",//10月是否缴纳：已缴纳或者未缴纳
+    "month11": "已缴纳",//11月是否缴纳：已缴纳或者未缴纳
+    "month12": "未缴纳",//12月是否缴纳：已缴纳或者未缴纳
+    "types":""//分类: 社保/公积金
+  },
+  "title": [
+    {
+      "keyid": "职称id",
+      "titleType": "职称类别",
+      "titleLevel": "职称级别",
+      "titleMajor": "职称专业",
+      "obtainTime": "获取时间",
+      "file": "附件"
+    }
+  ]
+}

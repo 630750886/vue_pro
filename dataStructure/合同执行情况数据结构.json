@@ -1,0 +1,36 @@
+{
+  //合同信息
+  "contractInfo": {
+    "contractCode": "HDZX-2020-1",//合同编号
+    "contractName": "工程建设",//合同名称
+    "customerName": "高通房地产有限公司"//客户名称
+  },
+  //项目信息
+  "projectInfo": [
+    {
+      "projectCode": "HDZX-2020-1-1",//项目编号
+      "projectName": "土建咨询",//项目名称
+      "planDays": "10",//计划天数
+      "workSchedule": "90%",//项目进度，计划服务总天数/已过的天数（保留整数）
+      "workDelayDays": "2",//工作延期
+      "filedDelayDays": "2",//归档延期
+      "filedInfo": "已归档",//档案情况，已归档/未归档
+      "serviceMoneyIncome": "30000",//服务费收入
+      "fileMoneyIncome": "500",// 文件费收入
+      "workTravelMoneyExpend": "750",// 项目支出
+      "taxesExpend": "1200"// 税金支出
+    }
+  ],
+  //其他情况
+  "otherInfo": {
+    "invoiceSum":"3000",//开票金额
+    "collectInvoiceSum":"2000",//开票已收
+    "collectSum":"3500"//应收账款
+  },
+  //风险（履约）保证金情况
+  "bondSunInfo":{
+    "paymentSum":"1000",//缴纳金额
+    "paymentTime":"2020/05/08",//缴纳时间
+    "returnTime":"2020/05/30"//退回时间
+  }
+}

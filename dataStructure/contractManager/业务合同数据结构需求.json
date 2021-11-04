@@ -1,0 +1,72 @@
+{
+  "contractTypeKeyId":"合同类型id",
+  "contractTypeName":"合同类型名称",
+  "contractVocationalTypeKeyId":"业务类型id",
+  "contractVocationalTypeName":"业务类型名称:",
+  "contractCode":"合同编号",
+  "contractName":"合同名称",
+  //签订部门
+  "studyOutOrgKeyid":"",
+  "studyOutOrgName":"",
+  //甲方 客户方
+  "contractBurchaserKeid":"",
+  "contractBurchaser":"",
+  "contractBurchaserPerson":"负责人",
+  "contractBurchaserPhone":"",
+  //乙方
+  "contractSellerKeyid": "",
+  "contractSeller": "",
+  "contractSellerPerson": "负责人",
+  "contractSellerPhone": "",
+  //签订时间
+  "concludesigndateTime":"",
+  //合同争议方式
+  "methodDisputeCode":"",
+  //合同争议名称
+  "methodDisputeName":"",
+  "disputeName":"调解机构名称",
+  "disputeAddress":"调解地点",
+  //总投资
+  "projectSum":"",
+  //项目规模
+  "projectScale":"",
+  //收费标准
+  "projectStandard":"",
+  //合同金额
+  "contractSum":"",
+  //合同原件上传
+  "contractallfile":"",
+  //收款开始时间：选择（日历表）
+  "begindateTime":"",
+  "enddateTime":"",
+  //取消类型
+  "callOffTypeKeyid":"",
+  "callOffTypeName":"",
+  "callOffDesc":"取消理由",
+  //是否缴纳
+  "isgather":"",
+  //是否收保证金
+  "isdeposit":"",
+  "depositsum":"保证金",
+  "depositdateTime":"收取时间",
+  "depositfile":"收取回执单",
+  "indepositdateTime":"退回时间",
+  "indepositfile":"退回回执单",
+  /*造价咨询*/
+  "costKeyid":"计价标准id",
+  "castName":"计价标准",
+  /*工程监理*/
+  "installsum":"建筑安装工程费(万元)",
+  "projectAddress":"工程建设地",
+  "proTimeLimit":"工期(天)",
+  "enPersonKeyId":"总监理工程师id",
+  "enPersonName":"总监理工程师",
+  "deferredCharges":"延期收费标准",
+  //框架入库合同
+  "isExpiryDate":"是否有有效期",
+  "expiryDate":"有效期起止时间",
+  "expiryStartDate":"有效期开始时间",
+  "expiryEndDate":"有效期结束时间",
+  "contractStatusKeyId":"",
+  "contractStatusName":""
+}

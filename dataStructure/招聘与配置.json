@@ -1,0 +1,196 @@
+{
+  "招聘与配置的数据结构": [
+    {
+      //系统创建的申请时间
+      "sysApplyTime": "",
+      //系统默认创建申请组织
+      "sysApplyOrganize": "",
+      //系统默认创建申请部门
+      "sysApplyDepartment": "",
+      //创建办理事项
+      "establishType": "招聘需求",
+      //办事事项详细数据
+      "data": {
+        //申请部门
+        "applyDepartment": "",
+        //招聘岗位
+        "recruitStation": "",
+        //申请时间
+        "applyTime": "",
+        //拟招聘人数
+        "recruitNumber": "",
+        //申请原因的类型 □ 员工辞退	□ 员工离职	□ 业务增量	□ 新增业务	□ 新设部门
+        "applyTypes": [],
+        //申请原因理由
+        "applyReason": "",
+        //招聘紧急程度
+        //☑A：人员需求急，煤田筛选简历并发送，尽快安排面试
+        //□B：人员需求比较急，每2-3天筛选简历并发送
+        //□C：人员需求不急，加大筛选力度，每4-5天筛选简历并发送
+        "urgency": [],
+        //岗位职责
+        "stationDuty": "",
+        //教育水平
+        "education": "",
+        //工作年限
+        "workYears": "",
+        //专业要求
+        "majorReason": "",
+        //性别要求
+        "genderReason": "",
+        //年龄要求
+        "ageReason": "",
+        //特定工作经历
+        "experience": "",
+        //其他要求
+        "otherReason": "",
+        //部门经理意见
+        "departmentManagerOpinion": "",
+        //部门分管副总意见
+        "departmentVicePresidentOpinion": "",
+        //人力资源分管副总意见
+        "hrVicePresidentOpinion": ""
+      }
+    },
+    {
+      //系统创建的申请时间
+      "sysApplyTime": "",
+      //系统默认创建申请组织
+      "sysApplyOrganize": "",
+      //系统默认创建申请部门
+      "sysApplyDepartment": "",
+      //创建办理事项
+      "establishType": "转正申请",
+      //办事事项详细数据
+      "data":{
+        //填表日期
+        "fillTime":"",
+        //申请人
+        "applyPerson":"",
+        //性别
+        "gender":"",
+        //学历
+        "education":"",
+        //试用组织
+        "organize":"",
+        //试用部门
+        "department":"",
+        //试用分组
+        "group":"",
+        //试用开始时间
+        "startTime":"",
+        //试用结束时间
+        "endTime":"",
+        //试用期薪酬
+        "money":"",
+        //个人工作总结
+        "workSummary":"",
+        //部门意见
+        "departmentOpinion":"",
+        //分管副总意见
+        "vicePresidentOpinion":"",
+        //人力资源分管副总意见
+        "hrVicePresidentOpinion":"",
+        //总经理(中层以上)意见
+        "generalManagerOpinion":""
+      }
+    },
+    {
+      //系统创建的申请时间
+      "sysApplyTime": "",
+      //系统默认创建申请组织
+      "sysApplyOrganize": "",
+      //系统默认创建申请部门
+      "sysApplyDepartment": "",
+      //创建办理事项
+      "establishType": "离职申请",
+      //办事事项详细数据
+      "data":{
+        //填表日期
+        "fillTime":"",
+        //姓名
+        "applyPerson":"",
+        //性别
+        "gender":"",
+        //公司任职工龄
+        "workYears":"",
+        //部门
+        "department":"",
+        //职务
+        "resign":"",
+        //申请离职日期
+        "applyQuitTime":"",
+        //离职类型 ☑辞职    □辞退    □除名    □自动离职    □合同到期    □其它
+        "quitTypes":[],
+        //离职原因 ☑家庭   □个人发展   □公司平台   □工资   □上下级关系   □团队氛围   □福利   □其他
+        "quitReason":[],
+        //上班截止日期
+        "workEndTime":"",
+        //核准离职日期
+        "quitTime":"",
+        //部门审批
+        "departmentOpinion":"",
+        //人事审批
+        "hrOpinion":"",
+        //分管副总审批
+        "vicePresidentOpinion":"",
+        //总经理审批
+        "generalManagerOpinion":""
+      }
+    },
+    {
+      //系统创建的申请时间
+      "sysApplyTime": "",
+      //系统默认创建申请组织
+      "sysApplyOrganize": "",
+      //系统默认创建申请部门
+      "sysApplyDepartment": "",
+      //创建办理事项
+      "establishType": "调岗晋级",
+      //办事事项详细数据
+      "data":{
+        //员工姓名
+        "personName":"",
+        //性别
+        "gender":"",
+        //出生年月
+        "birthday":"",
+        //所在组织
+        "oldOrganize":"",
+        //所在部门
+        "oldDepartment":"",
+        //所在分组
+        "oldGroup":"",
+        //现岗位
+        "oldStation":"",
+        //现工资级别档次
+        "oldWagesLevel":"",
+        //拟调组织
+        "newOrganize":"",
+        //拟调部门
+        "newDepartment":"",
+        //拟调分组
+        "newGroup":"",
+        //新岗位
+        "newStation":"",
+        //拟工资级别档次
+        "newWagesLevel":"",
+        //入司时间
+        "entryTime":"",
+        //文化程度
+        "education":"",
+        //级    差
+        "levelDisparity":"",
+
+        //所在部门意见
+        "oldDepartmentOpinion":"",
+        //人力资源经理意见
+        "hrVicePresidentOpinion":"",
+        //分管副总意见
+        "vicePresidentOpinion":"",
+        //总经理意见
+        "generalManagerOpinion":""
+      }
+    }
+  ]
+}

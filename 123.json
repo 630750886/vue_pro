@@ -1,0 +1,6 @@
+
+/deep/ .el-table__fixed-right-patch {
+  background-color: transparent;
+}
+
+

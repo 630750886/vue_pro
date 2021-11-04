@@ -1,0 +1,143 @@
+{
+  "获取招聘需求请求参数：{keyid:'',applyTypeid:'0'}": {
+    //申请部门
+    "applyDepartment":"",
+    //招聘岗位
+    "recruitPost":"",
+    //申请时间
+    "applyTime":"",
+    //拟招聘人数
+    "recruitNumber":"",
+    //申请类型
+    "applyTypes":"",
+    //申请原因
+    "applyReason":"",
+    //招聘紧急程度
+    "urgency":"",
+    //岗位职责
+    "postDuty":"",
+    //教育水平
+    "education":"",
+    //工作年限
+    "workYears":"",
+    //专业要求
+    "majorReason":"",
+    //性别要求
+    "genderReason":"",
+    //年龄要求
+    "ageReason":"",
+    //特定工作经历
+    "experience":"",
+    //其他要求
+    "otherReason":"",
+    //部门经理意见
+    "departmentManagerOpinion": "",
+    //分管副总意见
+    "departmentVicePresidentOpinion": "",
+    //人力资源分管副总意见
+    "hrVicePresidentOpinion": ""
+
+  },
+  "获取员工转正请求参数：{keyid:'',applyTypeid:'1'}": {
+    //填表日期
+    "fillTime": "",
+    //申请人
+    "applyPerson": "",
+    //性别
+    "gender": "",
+    //学历
+    "education": "",
+    //试用组织
+    "organize": "",
+    //试用开始时间
+    "startTime": "",
+    //试用结束时间
+    "endTime": "",
+    //试用期薪酬
+    "money": "",
+    //个人工作总结
+    "workSummary": "",
+    //部门经理意见
+    "departmentManagerOpinion": "",
+    //分管副总意见
+    "departmentVicePresidentOpinion": "",
+    //人力资源分管副总意见
+    "hrVicePresidentOpinion": "",
+    //总经理意见(中层以上)
+    "generalManagerOpinion": ""
+  },
+  "获取离职申请请求参数：{keyid:'',applyTypeid:'2'}":{
+    //填表日期
+    "fillTime":"",
+    //姓名
+    "applyPerson":"",
+    //性别
+    "gender":"",
+    //公司任职工龄
+    "workYears":"",
+    //部门
+    "department":"",
+    //职务
+    "postName":"",
+    //申请离职日期
+    "applyQuitTime":"",
+    //离职类型
+    "quitTypes":"",
+    //离职原因
+    "quitReason":"",
+    //上班截至日期
+    "workEndTime":"",
+    //核准离职日期
+    "quitTime":"",
+    //离职面谈
+    "quitInterview":"",
+    //部门审批
+    "departmentOpinion":"",
+    //人事审批
+    "hrOpinion":"",
+    //分管副总审批
+    "vicePresidentOpinion":"",
+    //总经理审批
+    "generalManagerOpinion":""
+  },
+  "获取调岗晋级请求参数：{keyid:'',applyTypeid:'3'}":{
+    //员工姓名
+    "personName":"",
+    //性别
+    "gender":"",
+    //出生年月
+    "birthday":"",
+    //所在组织
+    "oldOrganize":"",
+    //现岗位
+    "oldPost":"",
+    //现工资级别档次
+    "oldWagesLevel":"",
+    //拟调组织
+    "newOrganize":"",
+    //新岗位
+    "newPost":"",
+    //拟工资级别档次
+    "newWagesLevel":"",
+    //入司时间
+    "entryTime":"",
+    //文化程度
+    "education":"",
+    //级差
+    "levelDisparity":"",
+    //所在部门意见
+    "departmentOpinion":"",
+    //人力资源分管副总意见
+    "hrVicePresidentOpinion":"",
+    //分管副总意见
+    "vicePresidentOpinion":"",
+    //总经理意见
+    "generalManagerOpinion":""
+  },
+  "获取补助请求参数：{keyid:'',applyTypeid:'4'}":{
+    //申请金额
+    "applyMoney":"",
+    //申请理由
+    "applyReason":""
+  }
+}

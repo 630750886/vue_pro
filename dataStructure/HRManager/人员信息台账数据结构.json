@@ -1,0 +1,66 @@
+{
+  //人员id
+  "keyid": "",
+  //姓名
+  "personName": "",
+  //性别
+  "gender": "",
+  //身份证号
+  "idCard": "",
+  //出生年月
+  "birthday": "",
+  //年龄
+  "age": "",
+  //手机号
+  "phone": "",
+  //人员分类名称
+  "personType": "",
+  //所属组织
+  "orgName":"",
+  //岗位名称
+  "posName":"",
+  //最高学历的名称
+  "maxEducation":"",
+  //社保:已购买/未购买
+  "isBuySocial":"",
+  //劳动合同:已签订/未签订
+  "isSignLaborContract":"",
+  //劳务合同:已签订/未签订
+  "isSignLabourServiceContract":"",
+  //保密协议:已签订/未签订
+  "isSignSecrecyTreaty":"",
+  //岗位职责书:已签订/未签订
+  "isSignStationDutyConfirmation":"",
+  //禁业合同:已签订/未签订
+  "isSignProhibitionTreaty":"",
+  //其他保险:已购买/未购买
+  "isBuyInsurance":"",
+  "educations": [//学历
+    {
+      "type": "学历类型",
+      "school": "毕业院校",
+      "graduateTime": "毕业时间",
+      "major": "所学专业"
+    }
+  ],
+  "honors": [//荣誉
+    {
+      "honorName": "荣誉名称",
+      "obtainTime": "获取时间"
+    }
+  ],
+  "titles": [
+    {
+      "titleType": "职称类别",
+      "titleLevel": "职称级别",
+      "titleMajor": "职称专业"
+    }
+  ],
+  "practices": [
+    {
+      "practiceType": "执业类型",
+      "majorA": "专业一",
+      "majorB": "专业二"
+    }
+  ]
+}

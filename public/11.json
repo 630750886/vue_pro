@@ -1,0 +1,255 @@
+{
+  "person": {
+    "entryTime": "2020/07/14",
+    "keyid": "123ccfd",
+    "userName": "程广和",
+    "loginName": "cgh",
+    "idCard": "520102198105294217",
+    "Gender": "男",
+    "Age": 39,
+    "Birthday": "1981-05-29",
+    "idCardAddress": "贵州省贵阳市观山湖区xxx街道xxx号",
+    "familyAddress": "贵州省贵阳市xxx区xxx街道xxx号",
+    "phone": "18388888888",
+    "emergencyPerson": "张三",
+    "emergencyPhone": "18088888888",
+    "personType": "合同B类",
+    "secrecyTreaty_signedTime": "2020/05/29",
+    "prohibitionTreaty_signedTime": "2020/05/29",
+    "stationDutyConfirmation_signedTime": "2020/05/14",
+    "idCardExpiryDate": {
+      "str": "2020/06/30-2020/08/21",
+      "list": [
+        "2020/06/30",
+        "2020/08/21"
+      ]
+    },
+    "laborContractExpiryDate": {
+      "str": "2020/04/01-2020/06/09",
+      "list": [
+        "2020/04/01",
+        "2020/06/09"
+      ]
+    },
+    "laborContractFile": "",
+    "labourServiceContract": {
+      "str": "2020/04/01-2020/04/01",
+      "list": [
+        "2020/04/01",
+        "2020/06/10"
+      ]
+    },
+    "labourServiceContractFile": "",
+    "secrecyTreatyFile": "",
+    "stationDutyConfirmationFile": "",
+    "prohibitionTreatyFile": ""
+  },
+  "station": [
+    {
+      "posid": "cD4D44A31E6cdC1BfD44bd6C6fc4caCb",
+      "orgName": "董事会/总经办/财务部",
+      "posName": "财务副总经理",
+      "keyid": "bf71bbf807974850bd8745de9fc6a907"
+    }
+  ],
+  "education": [
+    {
+      "type": "非全日制",
+      "school": "北京传媒",
+      "graduateTime": "2020-07-22T00:00:00",
+      "major": "播音主持",
+      "name": "本科",
+      "UserId": "123ccfd",
+      "keyid": "076699002ed74973ac8372fb11d79561"
+    },
+    {
+      "type": "非全日制",
+      "school": "清华大学",
+      "graduateTime": "2020-06-03T00:00:00",
+      "major": "计算机工程",
+      "name": "博士",
+      "UserId": "123ccfd",
+      "keyid": "14bbbd06db154342b7a3170432e70c94"
+    }
+  ],
+  "honor": [
+    {
+      "honorName": "荣誉三",
+      "obtainTime": "2020-07-17T00:00:00",
+      "UserId": "123ccfd",
+      "keyid": "51e683e051aa4229a46fc237d3f6d7d2"
+    },
+    {
+      "honorName": "荣誉二",
+      "obtainTime": "2020-07-10T00:00:00",
+      "UserId": "123ccfd",
+      "keyid": "fed98f40f14e4f74ad8d9e8168465e7b"
+    }
+  ],
+  "insurance": [
+    {
+      "insuranceName": "平安保险",
+      "company": "贵州保险责任有限公司",
+      "insuredName": "王五",
+      "beneficiary": "王小五",
+      "buyTime": "2020-07-25T00:00:00",
+      "UserId": "123ccfd",
+      "keyid": "02fa81641f3d4bc78097487a60244ac0"
+    },
+    {
+      "insuranceName": "人寿保险",
+      "company": "贵州保险责任有限公司",
+      "insuredName": "张三",
+      "beneficiary": "张小三",
+      "buyTime": "2020-07-22T00:00:00",
+      "UserId": "123ccfd",
+      "keyid": "eb1251f3ea6f4c2f99d35feb58c8706a"
+    }
+  ],
+  "practice": [
+    {
+      "practiceType": "咨询工程师",
+      "majorA": "专业一",
+      "majorB": "专业二",
+      "obtainTime": "2020-07-08T00:00:00Z",
+      "startTime": "2020-07-24T00:00:00Z",
+      "endTime": "2020-08-26T00:00:00Z",
+      "UserId": "123ccfd",
+      "keyid": "679f41b182f546a79505bd4158b5c435"
+    },
+    {
+      "practiceType": "水利造价工程师",
+      "majorA": "专业3",
+      "majorB": "专业2",
+      "obtainTime": "2020-07-23T00:00:00Z",
+      "startTime": "2020-07-10T00:00:00Z",
+      "endTime": "2020-08-20T00:00:00Z",
+      "UserId": "123ccfd",
+      "keyid": "e6f943300f1e423fa48c2501d961ceb2"
+    }
+  ],
+  "socialFund": [
+    {
+      "types": 1,
+      "year": "2020",
+      "month": "1",
+      "isPayment": "已缴纳",
+      "UserId": "123ccfd",
+      "keyid": "5b95055661cc4863b194ef83cbf95017"
+    },
+    {
+      "types": 0,
+      "year": "2020",
+      "month": "1",
+      "isPayment": "0",
+      "UserId": "123ccfd",
+      "keyid": "bb7f6aaf23a641e2baee5db77df2dd4a"
+    },
+    {
+      "types": 0,
+      "year": "2020",
+      "month": "2",
+      "isPayment": "已缴纳",
+      "UserId": "123ccfd",
+      "keyid": "3b32667ac59a4a21ba21ad5373362b31"
+    },
+    {
+      "types": 1,
+      "year": "2020",
+      "month": "2",
+      "isPayment": "已缴纳",
+      "UserId": "123ccfd",
+      "keyid": "6448a5077a0e49c498d692a1726eeb59"
+    },
+    {
+      "types": 0,
+      "year": "2020",
+      "month": "2",
+      "isPayment": "已缴纳",
+      "UserId": "123ccfd",
+      "keyid": "8223d62fef3b4f51bba65ea2d7e5b30e"
+    },
+    {
+      "types": 0,
+      "year": "2020",
+      "month": "3",
+      "isPayment": "未缴纳",
+      "UserId": "123ccfd",
+      "keyid": "88988884386e4cf4b82e882d8ac4c1fb"
+    },
+    {
+      "types": 0,
+      "year": "2020",
+      "month": "4",
+      "isPayment": "已缴纳",
+      "UserId": "123ccfd",
+      "keyid": "c2b4f4cbbd494679984d122b1ca1c84f"
+    },
+    {
+      "types": 0,
+      "year": "2021",
+      "month": "1",
+      "isPayment": "未缴纳",
+      "UserId": "123ccfd",
+      "keyid": "67dc62c45efb415c88dcb271e090469f"
+    },
+    {
+      "types": 1,
+      "year": "2021",
+      "month": "1",
+      "isPayment": "未缴纳",
+      "UserId": "123ccfd",
+      "keyid": "deb5639d464f4c798297e0a9ce37f06b"
+    },
+    {
+      "types": 0,
+      "year": "2021",
+      "month": "2",
+      "isPayment": "未缴纳",
+      "UserId": "123ccfd",
+      "keyid": "2b597f9426cc4e3ea2c6ccee53aaa4f7"
+    },
+    {
+      "types": 1,
+      "year": "2021",
+      "month": "3",
+      "isPayment": "未缴纳",
+      "UserId": "123ccfd",
+      "keyid": "abcbd911b49344618600415cbadfa707"
+    },
+    {
+      "types": 0,
+      "year": "2021",
+      "month": "8",
+      "isPayment": "已缴纳",
+      "UserId": "123ccfd",
+      "keyid": "8979060f8f6348d69b5f68af1599a588"
+    },
+    {
+      "types": 0,
+      "year": "2022",
+      "month": "1",
+      "isPayment": "已缴纳",
+      "UserId": "123ccfd",
+      "keyid": "3678d37a3fa64eaeb1a515b2df6fccab"
+    }
+  ],
+  "title": [
+    {
+      "titleType": "经济类",
+      "titleLevel": "高级",
+      "titleMajor": "专业一",
+      "obtainTime": "2020-06-03T00:00:00",
+      "UserId": "123ccfd",
+      "keyid": "5ecc29b0b78a41f09b2bdb2f23802bc4"
+    },
+    {
+      "titleType": "工程类",
+      "titleLevel": "初级",
+      "titleMajor": "专业二",
+      "obtainTime": "2020-07-15T00:00:00",
+      "UserId": "123ccfd",
+      "keyid": "f7913f1d596745ddb30ebec842769ec5"
+    }
+  ]
+}

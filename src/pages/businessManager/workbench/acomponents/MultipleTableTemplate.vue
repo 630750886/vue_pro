@@ -1,0 +1,79 @@
+<template>
+	<div>
+		<el-table :data="tableData" style="width: 100%" border>
+			<el-table-column type="expand" >
+				<template slot-scope="props" v-if="props.row.more == true">
+					<el-form label-position="left" inline class="demo-table-expand" >
+						<template v-for="item in props.row.fileList">
+							<el-form-item label="创建时间">
+								<span>{{ item.createTime }}</span>
+							</el-form-item>
+							<el-form-item label="操作">
+								<el-button type="text">下载</el-button>
+								<el-button type="text">删除</el-button>
+							</el-form-item>
+						</template>
+					</el-form>
+				</template>
+			</el-table-column>
+			<el-table-column label="文件名称" prop="name"></el-table-column>
+			<el-table-column label="创建时间" prop="fileList.createTime"></el-table-column>
+			<el-table-column label="附件">
+				<template slot-scope="scope" >
+					<el-button type="text" v-if="scope.row.more == false">下载</el-button>
+				</template>
+			</el-table-column>
+			<el-table-column label="操作" >
+				<template slot-scope="scope">
+					<el-button type="text" v-if="scope.row.more == false" @click="$refs.addRef.openDialog()">附件上传</el-button>
+					<el-button type="text" v-if="scope.row.more == true" @click="$refs.addRef.openDialog()">新增</el-button>
+				</template>
+			</el-table-column>
+		</el-table>
+		<div class="dialog">
+			
+			<add-by-company-dialog width="30%" ref="addRef"></add-by-company-dialog>
+		</div>
+	</div>
+	
+</template>
+
+
+
+<script>
+	import AddByCompanyDialog from './dialog/AddByCompanyDialog.vue'
+	export default {
+		components:{
+			AddByCompanyDialog,
+		},
+		props:{
+			tableData:{
+				type:Array,
+				default:()=>[],
+			}
+		},
+		
+		data() {
+			return {
+				
+			}
+		}
+	}
+</script>
+
+<style>
+	.demo-table-expand {
+		font-size: 0;
+	}
+
+	.demo-table-expand label {
+		width: 90px;
+		color: #99a9bf;
+	}
+
+	.demo-table-expand .el-form-item {
+		margin-right: 0;
+		margin-bottom: 0;
+		width: 50%;
+	}
+</style>

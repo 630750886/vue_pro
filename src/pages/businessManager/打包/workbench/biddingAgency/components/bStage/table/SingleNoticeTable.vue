@@ -1,0 +1,207 @@
+<template>
+  <div>
+
+    <div>
+    	<head-right-button @click="$refs.addRef.openDialog()"  title="新建"></head-right-button>
+    </div>
+    <div>
+    	<el-table :data="dataList" style="width: 100%" align="center"  height="400px" highlight-current-row
+    	 :header-cell-style="{fontSize:'10px'}" border>
+<!--    		<el-table-column prop="createddateTime" label="创建时间" header-align="center" align="left"><template slot-scope="scope">{{scope.row.createddateTime|datefmt('YYYY/MM/DD')}}</template></el-table-column>-->
+<!--    		<el-table-column prop="attachFile" label="附件"  align="center">-->
+<!--					<template slot-scope="scope">-->
+<!--						<download-button :value="scope.row.attachFile"></download-button>-->
+<!--					</template>-->
+<!--				</el-table-column>-->
+<!--				<el-table-column prop="needAttachFile" label="盖章扫描件" align="center">-->
+<!--					<template slot-scope="scope">-->
+<!--						<download-button :value="scope.row.needAttachFile"></download-button>-->
+<!--					</template>-->
+<!--				</el-table-column>-->
+<!--				<el-table-column label="发布情况" align="center">-->
+<!--					<template slot-scope="scope">-->
+<!--						<com-popover :label-prop="[-->
+<!--              {label:'发布日期',prop:'publicitydateTime'},-->
+<!--              {label:'发布网站',prop:'publicityWebName'},-->
+<!--              {label:'截图',prop:'publicityImageFile',type:'file'},-->
+<!--              {label:'更正截图',prop:'publicityChangeImageFile',type:'file'},-->
+<!--            ]"-->
+<!--												 url="/pro/publicitylist/findwhere"-->
+<!--												 :filter="{pkeyid:scope.row.keyid}"></com-popover>-->
+<!--					</template>-->
+<!--				</el-table-column>-->
+				<el-table-column prop="publicityCount" label="发布次数" align="center" width="80px"></el-table-column>
+				<el-table-column label="发布时间" align="center" width="120px">
+					<template slot-scope="scope"><getWeb :pkeyid="scope.row.keyid" :isNameItem="1"></getWeb></template>
+				</el-table-column>
+				<el-table-column label="发布网站" align="center">
+					<template slot-scope="scope"><getWeb :pkeyid="scope.row.keyid" :isNameItem="2"></getWeb></template>
+				</el-table-column>
+				<el-table-column label="网站截图" align="center" width="80px">
+					<template slot-scope="scope">
+						<getWeb :pkeyid="scope.row.keyid" :isNameItem="3"></getWeb>
+					</template>
+				</el-table-column>
+				<el-table-column label="更正截图" align="center" width="120px">
+					<template slot-scope="scope">
+						<getWeb :pkeyid="scope.row.keyid" :isNameItem="4"></getWeb>
+					</template>
+				</el-table-column>
+				<el-table-column prop="dissentDoWay" label="异议处理结果" align="center" width="120px"></el-table-column>
+				<el-table-column prop="dissentResultFile" label="异议处理相关资料" align="center" width="120px">
+					<template slot-scope="scope">
+						<download-button :value="scope.row.dissentResultFile"></download-button>
+					</template>
+				</el-table-column>
+
+				<el-table-column label="操作" align="center" min-width="200" fixed="right">
+    			<template slot-scope="scope">
+<!--    				<el-button type="text" @click="$refs.updateRef.openDialog(scope.row)">修改</el-button>-->
+<!--    				<el-button type="text" @click="$refs.perfectRef.openDialog(scope.row)">完善发布信息</el-button>-->
+						<el-button type="primary" plain size="mini" @click="$refs.handingRef.openDialog(scope.row)">异议处理登记</el-button>
+						<el-button type="primary" plain size="mini" @click="delSingle(scope.row)">删除</el-button>
+    			</template>
+    		</el-table-column>
+
+    	</el-table>
+    </div>
+		<div class="dialog">
+<!--			title="异议处理登记"-->
+			<objection-handling-dialog  width="30%" ref="handingRef"
+																 @getFormData="networkUpData"></objection-handling-dialog>
+<!--			title="新增编制及发布"-->
+			<add-establishment-dialog  width="30%" ref="addRef" @getFormData="networkAddData"></add-establishment-dialog>
+			<add-establishment-dialog title="修改" width="30%" ref="updateRef" @getFormData="networkUpData"></add-establishment-dialog>
+			<perfect-info-dialog title="完善信息" width="50%" ref="perfectRef"></perfect-info-dialog>
+		</div>
+  </div>
+</template>
+<script>
+  // import __ from '__' // __是需要手动引入的文件
+  import HeadRightButton from "../button/HeadRightButton.vue"
+  import AddEstablishmentDialog from "../dialog/SingleNoticeTable/AddEstablishmentDialog.vue"
+  import PerfectInfoDialog from "../dialog/SingleNoticeTable/PerfectInfoDialog.vue"
+  import {mapState} from 'vuex'
+  import {getPretrial,addPretrial,upPretrial,delPretrial} from '../../../../../../../api/workbench/webapi-biddingAgency.js'
+
+	import getWeb from "../dialog/SingleNoticeTable/getWeb.vue";
+	import {GetHttp} from "../../../../../../../utils/http";
+	import ObjectionHandlingDialog from "../dialog/SingleNoticeTable/ObjectionHandlingDialog.vue"
+  export default {
+    components: {
+      HeadRightButton,
+			AddEstablishmentDialog,
+			PerfectInfoDialog,
+			getWeb,
+			ObjectionHandlingDialog
+    },
+    props: {
+      title: '',
+      width: '',
+      labelWidth: {
+        type: String,
+        default: '130px'
+      },
+			data:{},
+    },
+    watch: {},
+    computed:{
+      ...mapState('workbench',{
+        currentItem:'currentItem'
+      })
+    },
+    //数据节点
+    data() {
+      return {
+        dataList: [],
+      }
+    },
+    //生命周期函数节点
+    created() {
+      this.networkGetDataList()
+			},
+    //自定义函数节点
+    methods: {
+			delSingle(data){
+				this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+					confirmButtonText: '确定',
+					cancelButtonText: '取消',
+					type: 'warning'
+				}).then(() => {
+					delPretrial({keyid:data.keyid}).then(item => {
+						if (item.code === 200) {
+							this.$message({
+								type: 'success',
+								message: '删除成功!'
+							});
+							this.networkGetDataList()
+						}
+					})
+
+				}).catch(() => {
+					this.$message({
+						type: 'info',
+						message: '已取消删除'
+					});
+				});
+
+			},
+      networkGetDataList() {
+        let ref={
+          projectKeyid:this.currentItem.keyid,
+          publicityTypeKeyid:'singlenotice'
+        }
+        getPretrial(ref).then(item=>{
+          this.dataList=item.data
+        })
+      },
+      networkAddData(formData) {
+        formData.projectKeyid=this.currentItem.keyid
+        formData.ordernum=this.maxOrder+1
+        formData.publicityTypeKeyid='singlenotice'
+        addPretrial(formData).then(item=>{
+          if (item.code === 200) {
+						this.$message.success("新建成功")
+						let getData= {pkeyid:item.data.keyid,publicityChangeImageFile:''}
+						getData.publicitydateTime=formData.publicitydateTime
+						getData.publicityWebName=formData.publicityWebName
+						getData.publicityImageFile=formData.publicityImageFile
+						GetHttp('java_post','/pro/publicitylist/adds','post',getData).then(res => {
+							this.networkGetDataList()
+						})
+            this.networkGetDataList()
+          }
+        })
+      },
+      networkUpData(formData) {
+        upPretrial(formData).then(item=>{
+          if (item.code === 200) {
+            this.$message.success(item.message)
+            this.networkGetDataList()
+          }
+        })
+      },
+      networkDelData(formData) {
+        delPretrial(formData).then(item=>{
+          if (item.code === 200) {
+            this.$message.success(item.message)
+            this.networkGetDataList()
+          }
+        })
+      },
+      networkAdjustmentData(formData) {
+        formData.pkeyid=this.$myfunction.copyData(formData.keyid)
+        formData.keyid=''
+        addPretrial(formData).then(item=>{
+          if (item.code === 200) {
+            this.$message.success(item.message)
+            this.networkGetDataList()
+          }
+        })
+      },
+    }
+  }
+</script>
+<style lang='less' scoped>
+
+</style>

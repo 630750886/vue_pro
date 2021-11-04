@@ -1,0 +1,13 @@
+box{
+    /*调用*/
+    animation: rotate1 15s linear infinite;
+}
+/*动画*/
+@keyframes rotate1 {
+    form{
+        transform: translate(-50%,-50%) rotate(0deg)
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg)
+    }
+}

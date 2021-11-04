@@ -1,0 +1,166 @@
+{
+
+  "添加人员信息":{
+    //钉钉用户编号
+    "dinCode":"",
+    "personName": "",
+    "idCard": "身份证号",
+    "phone": "手机号",
+    "orgId":"",
+    "orgName":"",
+    "posId":"",
+    "posName":""
+  },
+  "高级查询":{
+    //姓名
+    "personName":"",
+    //性别
+    "gender":"",
+    //人员分类
+    "personType":"",
+    //组织名称
+    "orgName":"",
+    //岗位名称
+    "postName":"",
+    //最高学历
+    "maxEducation":"",
+    //所学专业
+    "major":"",
+    //执业证件专业
+    "practiceMajor":"",
+    //学历工龄
+    "educationYears":[],
+    //年龄
+    "age":[],
+    //入职工龄
+    "workYears":[],
+    //职称级别
+    "titleLevel":"",
+    //职称类别
+    "titleType":"",
+    //职称专业
+    "titleMajor":"",
+    //多执业证件选择
+    "practiceList":[],
+    //执业获取时间
+    "getCertifyTime":"",
+    //身份证信息是否有效
+    "isIDCard":"",
+    //是否签订劳动合同
+    "isSignLaborContract":"",
+    //劳动合同是否有效
+    "isLaborContractEffective":"",
+    //是否签订劳务合同
+    "isSignLabourServiceContract":"",
+    //劳务合同是否有效
+    "isLabourServiceContractEffective":"",
+    //是否签订保密协议
+    "isSignSecrecyTreaty":"",
+    //是否签订禁业合同
+    "isSignProhibitionTreaty":"",
+    //是否签订岗位职责确认书
+    "isSignPostDutyBook":"",
+    //社保缴纳时间
+    "socialPaymentTime":"",
+    //公积缴纳时间
+    "fundPaymentTime":"",
+    //是否购买其他保险
+    "isBuyOtherInsurance":""
+  },
+  "工资信息导入":{
+    //年
+    "year":"",
+    //月
+    "month":"",
+    //附件
+    "file":""
+  },
+  "工作提醒":{
+    //被提醒人
+    "personId":"",
+    //工作要求
+    "workClaims":""
+  },
+  "修改人员基本信息":{
+    "keyid": "人员id",
+    "personName": "姓名",
+    "gender": "性别",
+    "age": "年龄",
+    "birthday": "出生年月",
+    "idCard": "身份证号",
+    //身份证有效期 2015/06/21-2025/06/21
+    "idCardExpiryDate": "",
+    "idCardAddress": "身份证上住址",
+    "familyAddress": "家庭住址",
+    "phone": "手机号",
+    "emergencyPerson": "紧急联系人",
+    "emergencyPhone": "紧急联系人电话",
+    "personType": "人员分类名称",
+    //劳动合同有效期 格式：2015/06/21-2025/06/21
+    "laborContractExpiryDate": "",
+    //劳动合同扫描件
+    "laborContractFile": "",
+    //劳务合同有效期 格式：2015/06/21-2025/06/21
+    "labourServiceContractDate":"",
+    //劳务合同扫描件
+    "labourServiceContractFile": "",
+    "secrecyTreatySignTime": "保密协议签订时间",
+    //保密协议扫描件保密协议扫描件
+    "secrecyTreatyFile": "postDutyBook",
+    "postDutyBookSignTime": "岗位职责确认书签订时间",
+    //岗位职责确认扫描件
+    "postDutyBookFile": "",
+    "prohibitionTreatySignTime": "禁业协议签订时间",
+    //禁业协议扫描件
+    "prohibitionTreatyFile": ""
+  },
+  "新增/修改学历":{
+    //学历id 修改时才有
+    "keyid": "学历id",
+    "personId": "",
+    "nameid": "学历名称id",//新增
+    "name": "学历名称",
+    "type": "类型",
+    "school": "毕业院校",
+    "graduateTime": "毕业时间",
+    "major": "所学专业",
+    "file": "毕业证附件"
+  },
+  "新增/修改荣誉":{
+    "keyid": "荣誉id",
+    "personId": "",
+    "honorName": "荣誉名称",
+    "obtainTime": "获取时间",
+    "file": "附件"
+  },
+  "新增/修改职称":{
+    "keyid": "职称id",
+    "titleTypeid": "职称类别id",//新增
+    "titleType": "职称类别",
+    "titleLevelid": "职称级别id",//新增
+    "titleLevel": "职称级别",
+    "titleMajor": "职称专业",
+    "obtainTime": "获取时间",
+    "file": "附件"
+  },
+  "新增/修改执业":{
+    "keyid": "执业id",
+    "practiceTypeid": "",//新增
+    "practiceType": "执业类型",
+    "majorA": "专业一",
+    "majorB": "专业二",
+    "obtainTime": "初次获取时间",
+    "startTime": "有效期开始时间",
+    "endTime": "有效期结束时间",
+    "file": "附件"
+  },
+  "新增/修改其他保险":{
+    "keyid": "id",
+    "insuranceName": "保险名称",
+    "company": "保险公司",
+    "insuredName": "被保险人",
+    "beneficiary": "受益人",
+    "buyTime": "购买时间",
+    "file": "附件"
+  }
+}

@@ -1,0 +1,578 @@
+//覆盖一些element-ui样式
+
+body .el-table th.gutter {
+  display: table-cell !important;
+}
+body .el-table colgroup.gutter {
+  display: table-cell !important;
+}
+
+body .el-table{
+  overflow: auto ;
+  max-height: 600px;
+}
+
+.block-checkbox {
+  display: block;
+}
+
+.phoneGroup {
+  .el-checkbox {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+}
+
+.loginForm {
+  .el-input__inner {
+    padding-left: 30px !important;
+    height: 36px !important;
+  }
+}
+
+.el-pagination.is-background .el-pager.active {
+  background-color: #409EFF;
+  color: rgb(163, 4, 4);
+}
+
+.btn_color {
+  background-color: #409EFF;
+  color: #fff
+}
+
+.btn_color:focus, .btn_color:hover {
+  background-color: #fff;
+  color: #007d5f
+}
+
+.el-button--text {
+  color: #6eb7e4;
+}
+
+.el-button--text:focus, .el-button--text:hover {
+  color: #0d0d0e;
+  background: #04b0e465;
+}
+
+.el-autocomplete-suggestion{
+  width: auto!important;
+}
+
+
+// 设置左侧菜单栏 start
+.el-menu {
+  border: none;
+  height: 100%;
+  background: #409EFF;
+  .dropItem {
+    padding: 0 10px !important;
+    background: #04b0e4;
+    .svg-icon {
+      margin-right: 5px;
+    }
+  }
+  .el-tooltip,
+  .el-submenu__title {
+    padding: 0 10px !important;
+  }
+}
+//去掉main默认的padding
+.el-menu-item-group__title{
+  padding: 0;
+}
+
+.el-submenu {
+  .svg-icon {
+    margin-right: 5px;
+  }
+}
+.el-table__header-wrapper{
+  background: #409EFF !important;
+  color: #fff !important;
+}
+
+// 设置左侧菜单栏 end
+
+.condition-container {
+  .datetime {
+    .el-input__inner {
+      width: 180px;
+    }
+  }
+  .el-input__inner {
+    width: 141px;
+  }
+}
+
+.irate {
+  .el-icon-star-on {
+    color: #67c23a !important;
+  }
+}
+
+.operation-container {
+  .cell {
+    padding: 10px !important;
+  }
+  .el-button {
+    &:nth-child(3) {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+    &:nth-child(4) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 8px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.el-tag{
+  color: #000;
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//textarea修改样式
+.article-textarea {
+  textarea {
+    padding-right: 40px;
+    resize: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #bfcbd9;
+  }
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+.top-menu {
+  .el-badge__content {
+    top: 12px !important;
+  }
+}
+
+.li-badge {
+  .one {
+    .el-badge__content {
+      background-color: #a9d86e;
+    }
+  }
+  .three {
+    .el-badge__content {
+      background-color: #FCB322;
+    }
+  }
+}
+
+// 搜索区域
+.search-form {
+  width: 100%;
+  min-width: 750px;
+  .el-form-item {
+    margin-bottom: 10px;
+    .el-date-editor {
+      width: 166px;
+      .el-input__inner {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.fillcontain {
+  .el-input__inner {
+    height: 30px !important;
+    line-height: 30px !important;
+  }
+}
+
+.el-table th {
+  background-color: white !important;
+  color: #606266;
+  td{
+    font-size: 10px;
+  }
+}
+
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
+  color: #a9d86e !important;
+}
+
+.leftShareList {
+  width: 200px;
+}
+
+.shareOther a {
+  color: #000000;
+}
+
+.moreShareList {
+  padding: 0;
+  ul {
+    width: 100%;
+    a {
+      color: #000000;
+      padding: 5px 10px;
+      box-sizing: border-box;
+    }
+    a:hover {
+      background: #e8e8e8;
+    }
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .svg-icon {
+        margin-right: 10px;
+      }
+      span {
+        line-height: 0;
+      }
+    }
+  }
+}
+
+.qcodepopper {
+  .wechat-area {
+    align-items: center;
+    .titles {
+      font-size: 14px;
+      background: #a9d86e;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+      width: 100px;
+      text-align: center;
+      border-radius: 20px;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.yanshare {
+  .shareUl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.yanSharewx {
+  padding: 10px 0;
+  width: 100px !important;
+  .qrcodeArea {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    .saoTitle {
+      font-size: 14px;
+      color: #a9d86e;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.salesPrice {
+  span {
+    font-weight: bold;
+  }
+}
+
+.salesStatus {
+  span {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+
+.salesUsername {
+  .cell {
+    display: flex;
+    align-items: center;
+    .userImg {
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+}
+
+.salesTable {
+  .el-table {
+    height: 407px;
+    max-height: 407px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  th {
+    background: #fff !important;
+  }
+}
+
+.cardBody {
+  .el-card__body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logContainer {
+  width:100%;
+  height:100%;
+  margin: 0px;
+  padding:0px;
+  .box-card {
+    margin: 0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+    .el-card__body {
+      padding: 10px 20px;
+      height: 80%;
+    }
+    .item {
+      border-bottom: 1px solid #e8e8e8;
+      padding: 10px 0;
+    }
+  }
+}
+
+.tabContainer {
+  .el-tabs--border-card {
+    box-shadow: none;
+  }
+  .svg-icon {
+    margin-right: 5px;
+  }
+}
+
+.infoItem .el-menu,
+.langItem .el-menu {
+  min-width: 120px !important;
+  text-align: left;
+  .el-menu-item {
+    min-width: 100%;
+  }
+}
+
+.userinfo {
+  .el-icon-arrow-down {
+    display: none;
+  }
+}
+
+.table_container {
+  .el-table__body-wrapper {
+    overflow: hidden;
+  }
+}
+.el-table__header{
+  table-layout:fixed;
+  word-break:break-all;
+  word-wrap: break-word;
+  tr{
+    th{
+      background-color: #48ade7!important;
+      .cell{
+        overflow : hidden;
+        white-space: nowrap;//数据不换行
+        text-overflow: ellipsis;
+        color: #fff;
+        font-size: 14px !important;
+        text-align: center !important;
+        display: -webkit-box;
+        //-webkit-line-clamp: 2;      /*可以显示的行数，超出部分用...表示 */
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+.table-head{
+  font-size:14px !important;//设置固定的字体大小
+}
+
+/**--------------------------------------**/
+
+.el-menu-item {
+  background-color:#fff!important;
+  // background-image: linear-gradient(to top,#effbfd,#7be3fa ,#e7f8fc)!important;
+  //margin:  0px!important;
+  //outline: 0;
+  //padding: 0px 0px 0px 25px!important;
+}
+.el-submenu__title{
+  outline: 0;
+  //margin-bottom: 3px!important;
+  color: #fff!important;
+  background-color:#6eb7e5 !important;
+  //background-image: linear-gradient(to top,#5296fc,#1470fa ,#468efa)!important;
+}
+/* 水平菜单顶层菜单样式 */
+  /* >符号表示直接孩子，.el-menu--horizontal>.el-submenu .el-submenu_title表示的
+  是类.el-menu--horizontal元素（这个是顶层菜单el-menu）下的第一层元素（sub-menu）下的标题，
+  这个标题是放在<i>元素的slot属性中的，从而找到了<i>元素，修改它的样式就可以了 */
+
+  .el-menu--horizontal>.el-submenu .el-submenu__title {
+    height: 30px;
+    line-height: 30px;
+    color: #fff!important;
+    border-bottom: 2px solid transparent;
+    background: #0dc4fc56 !important;
+  }
+  /* 水平菜单子菜单的标题（注意，标题和菜单项不一样，标题是使用<i slot="title">表示的，需要单独处理），
+  这里使用.el-submenu>.el-submenu_title定位到子菜单（不是菜单项） */
+
+  .el-menu--horizontal .el-menu .el-submenu>.el-submenu__title {
+    float: none;
+    height: 23px;
+    line-height: 23px;
+    background: #0dc4fc56 !important;
+  }
+
+.el-menu--horizontal > .el-submenu .el-submenu__title,
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title,
+.el-submenu__title i {
+	color: #fff;
+}
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+	border-bottom: 2px solid #ff8923;
+	color: #fff;
+  background: #91aece !important;
+}
+//鼠标悬浮时，子菜单的样式
+.el-menu-item:hover {
+	outline: 0 !important;
+	color: #fff !important;
+	background: #0dc4fc56 !important;
+}
+// 一级菜单选中的样式
+.el-menu-item.is-active{
+  color: #fff !important;
+  border-bottom-color: transparent !important;
+  background: #0dc4fc56 !important;
+}
+// 二级菜单 选中的样式
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title{
+    color: #fff !important;
+    border-bottom-color: transparent !important;
+    background: #0dc4fc56 !important;
+}
+//鼠标悬浮时，主菜单的样式
+.el-submenu__title:focus,
+.el-submenu__title:hover {
+	outline: 0 !important;
+	color: #fff !important;
+	background: #48ade7a2 !important;
+}
+.el-menu--horizontal:focus,
+.el-menu--horizontal:hover {
+	outline: 0 !important;
+	color: #fff !important;
+	background: #48ade7a2 !important;
+}
+.nav-menu-son .el-menu--horizontal:hover{
+	background: #409EFF!important;
+}
+.el-menu {
+	background-color:none !important;
+}
+.el-menu-item a:hover {
+	background: #0dc4fc56;
+}
+.el-menu--popup-bottom-start {
+	margin-top: -2px;
+}
+.el-menu--popup {
+	background: #409EFF !important;
+	padding: 0 0;
+  min-width: 120px !important;
+  line-height: 40px !important;
+  box-shadow: 0 4px 8px 0 rgba(25,14,109,0.13);
+  border-radius: 5px;
+}
+.el-menu--horizontal .el-menu {
+	background: #409EFF;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item,
+.el-menu--horizontal .el-menu .el-submenu__title {
+	background-color: #409EFF;
+	float: none;
+	height: 36px;
+	line-height: 36px;
+	color: #fff !important;
+	z-index: 100;
+	font-weight: 500;
+}
+//二次菜单悬浮及背景样式
+.el-menu--popup-bottom-start .el-menu-item:hover{
+	color: rgb(40, 175, 253) !important;
+}
+.el-menu--popup-bottom-start .el-menu-item{
+  background: #fff !important;
+}
+::-webkit-scrollbar {
+  width:3px;
+}
